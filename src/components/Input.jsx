@@ -15,6 +15,11 @@ const Input = () => {
   const { data } = useContext(ChatContext);
 
   const handleSend = async () => {
+    if (text.trim() === "") {
+			alert("isi teksnya dulu")
+			return;
+      
+		}
     if (img) {
       const storageRef = ref(storage, uuid());
 
@@ -64,18 +69,20 @@ const Input = () => {
     });
 
     setText("");
+    
     setImg(null);
   };
   return (
     <div className="input">
       <input
+      className='inputSend'
         type="text"
         placeholder="Type something..."
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
+        <img src="" alt="" />
         <input
           type="file"
           style={{ display: "none" }}
@@ -85,7 +92,7 @@ const Input = () => {
         <label htmlFor="file">
           <img src={Img} alt="" />
         </label>
-        <button onClick={handleSend}>Send</button>
+        <button onClick={handleSend} className='Send'>Send</button>
       </div>
     </div>
   );

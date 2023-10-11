@@ -25,7 +25,7 @@ const navigate = useNavigate()
     <div className='formContainer'>
     <div className='formWrapper'>
         <span className='logo'>Jeffry Chat</span>
-        <span className='title'>Register</span>
+        <span className='title'>Login</span>
         <form onSubmit={handleSubmit}>
           
             <input type='email' placeholder='emal'/>
@@ -33,7 +33,7 @@ const navigate = useNavigate()
         
             
             <button>Sign In</button> 
-            {err && <span>Something Went Wrong  </span>} 
+            {err && <span>Salah Password Atau Email  </span>} 
         </form>
         <p>
           Dont Have An Account?  <Link to='/register'>Register</Link>

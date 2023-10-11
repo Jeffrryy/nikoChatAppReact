@@ -35,9 +35,9 @@ const Search = () => {
     }
   };
 
-  const handleKey = (e) => {
-    e.code === "Enter" && handleSearch();
-  };
+  // const handleKey = (e) => {
+  //   e.code === "Enter" && handleSearch();
+  // };
 
   const handleSelect = async () => {
     //check whether the group(chats in firestore) exists, if not create
@@ -72,7 +72,7 @@ const Search = () => {
         });
       }
     } catch (err) {}
-
+    setErr(true)
     setUser(null);
     setUsername("")
   };
@@ -81,13 +81,14 @@ const Search = () => {
       <div className="searchForm">
         <input
           type="text"
-          placeholder="Find a user"
-          onKeyDown={handleKey}
+          placeholder="Cari User"
+          
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <button onClick={handleSearch} className="btnSearch">Search</button>
       </div>
-      {err && <span>User not found!</span>}
+      {/* {err && <span>User not found!</span>} */}
       {user && (
         <div className="userChat" onClick={handleSelect}>
           <img src={user.photoURL} alt="" />
