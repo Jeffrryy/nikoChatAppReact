@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nikoChatAppReact/static/css/main.d244cc85.css",
+    "main.js": "/nikoChatAppReact/static/js/main.2c6d6add.js",
+    "index.html": "/nikoChatAppReact/index.html",
+    "main.d244cc85.css.map": "/nikoChatAppReact/static/css/main.d244cc85.css.map",
+    "main.2c6d6add.js.map": "/nikoChatAppReact/static/js/main.2c6d6add.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d244cc85.css",
+    "static/js/main.2c6d6add.js"
+  ]
+}
