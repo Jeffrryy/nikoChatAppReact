@@ -3,7 +3,7 @@ import './style.scss';
 import Register from './Pages/Register';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
-import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom'
+import {HashRouter   as   BrowserRouter,Routes,Route, Navigate} from 'react-router-dom'
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext'
 function App() {
