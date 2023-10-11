@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nikoChatAppReact/static/css/main.d244cc85.css",
-    "main.js": "/nikoChatAppReact/static/js/main.7add90e6.js",
+    "main.css": "/nikoChatAppReact/static/css/main.44b32982.css",
+    "main.js": "/nikoChatAppReact/static/js/main.095bb014.js",
     "index.html": "/nikoChatAppReact/index.html",
-    "main.d244cc85.css.map": "/nikoChatAppReact/static/css/main.d244cc85.css.map",
-    "main.7add90e6.js.map": "/nikoChatAppReact/static/js/main.7add90e6.js.map"
+    "main.44b32982.css.map": "/nikoChatAppReact/static/css/main.44b32982.css.map",
+    "main.095bb014.js.map": "/nikoChatAppReact/static/js/main.095bb014.js.map"
   },
   "entrypoints": [
-    "static/css/main.d244cc85.css",
-    "static/js/main.7add90e6.js"
+    "static/css/main.44b32982.css",
+    "static/js/main.095bb014.js"
   ]
 }
